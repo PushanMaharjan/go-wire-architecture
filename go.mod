@@ -11,9 +11,13 @@ require (
 )
 
 require (
+	github.com/getsentry/sentry-go v0.13.0
 	github.com/go-playground/validator/v10 v10.11.0 // indirect
+	github.com/google/uuid v1.1.2
 	github.com/jinzhu/now v1.1.5 // indirect
+	github.com/rubenv/sql-migrate v1.1.2
 	github.com/spf13/cobra v1.5.0
+	github.com/stretchr/testify v1.7.1
 	github.com/ugorji/go v1.2.7 // indirect
 	go.uber.org/fx v1.17.1
 	go.uber.org/zap v1.17.0
