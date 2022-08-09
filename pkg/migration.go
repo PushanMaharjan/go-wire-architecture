@@ -10,22 +10,11 @@ type Migrations struct {
 	db     Database
 }
 
-// NewMigrations -> return new Migrations struct
-func NewMigrations(
-	logger Logger,
-	db Database,
-) Migrations {
-	return Migrations{
-		logger: logger,
-		db:     db,
-	}
-}
-
 // Migrate migrates all migrations that are defined
 func (m Migrations) Migrate() error {
 
 	migrations := &migrate.FileMigrationSource{
-		Dir: "migration/",
+		Dir: "internal/migration/",
 	}
 
 	sqlDB, err := m.db.DB.DB()
